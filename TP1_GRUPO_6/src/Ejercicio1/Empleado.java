@@ -2,17 +2,19 @@ package Ejercicio1;
 
 public class Empleado 
 {
-	private int id;
+	private final int id;
 	private String nombre;
 	private int edad;
+	
+	public Empleado() {
+		cont++;
+		this.id = cont;
+	}
 
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -30,5 +32,5 @@ public class Empleado
 		this.edad = edad;
 	}
 	
-	static int cont=1000;
+	private static int cont = 1000;
 }
