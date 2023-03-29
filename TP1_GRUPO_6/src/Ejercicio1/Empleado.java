@@ -5,8 +5,6 @@ public class Empleado
 	private int id;
 	private String nombre;
 	private int edad;
-	
-	static int cont=1000;
 
 	public int getId() {
 		return id;
@@ -31,4 +29,6 @@ public class Empleado
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+	
+	static int cont=1000;
 }
