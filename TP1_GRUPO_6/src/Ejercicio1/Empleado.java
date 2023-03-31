@@ -6,18 +6,22 @@ public class Empleado
 	private String nombre;
 	private int edad;
 	
+	private static int cont = 1000;
+	
 	public Empleado() {
-		cont++;
 		this.id = cont;
 		this.nombre = "Sin nombre";
 		this.edad = 99;
+		
+		cont++;
 	}
 	
 	public Empleado(String nombre, int edad) {
-		cont++;
 		this.id = cont;
 		this.nombre = nombre;
 		this.edad = edad;
+		
+		cont++;
 	}
 
 	public int getId() {
@@ -40,6 +44,11 @@ public class Empleado
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	@Override
+	public String toString() {
+		return "Empleado [ID=" + id + ", Nombre=" + nombre + ", Edad=" + edad + "]";
+	}
 	
-	private static int cont = 1000;
+	
 }
