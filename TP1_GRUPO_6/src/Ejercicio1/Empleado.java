@@ -28,7 +28,6 @@ public class Empleado
 		return id;
 	}
 
-
 	public String getNombre() {
 		return nombre;
 	}
@@ -50,5 +49,8 @@ public class Empleado
 		return "Empleado [ID=" + id + ", Nombre=" + nombre + ", Edad=" + edad + "]";
 	}
 	
+	public static int devuelveProximoID() {
+		return cont;
+	}
 	
 }

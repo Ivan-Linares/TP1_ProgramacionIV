@@ -13,6 +13,8 @@ public class Principal {
 		System.out.println("ID: " + Tuke.getId() + " Nombre: " + Tuke.getNombre());
 		System.out.println(Tuke.toString());
 		System.out.println(Teto.toString());
+		
+		System.out.println(Empleado.devuelveProximoID());
 	}
 
 }
