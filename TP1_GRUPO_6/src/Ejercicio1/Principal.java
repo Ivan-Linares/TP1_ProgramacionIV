@@ -4,17 +4,21 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Empleado Tuke = new Empleado();
-		Empleado Teto = new Empleado("Teto", 41);
-		Empleado Tato = new Empleado();
+		Empleado[] vEmpleados = new Empleado[5];
 		
-		Tuke.setNombre("Tuke");
+		vEmpleados[0] = new Empleado();
+		vEmpleados[0].setNombre("Tuke");
 		
-		//System.out.println("ID: " + Tuke.getId() + " Nombre: " + Tuke.getNombre());
-		System.out.println(Tuke.toString());
-		System.out.println(Teto.toString());
-		System.out.println(Tato.toString());
+		vEmpleados[1] = new Empleado("Teto", 41);
+		vEmpleados[2] = new Empleado();
+		vEmpleados[3] = new Empleado("Marie", 22);
+		vEmpleados[4] = new Empleado("Juan", 35);
 		
+
+		for(Empleado empleado : vEmpleados){
+			System.out.println(empleado.toString());
+		}
+
 		System.out.println("ID del siguiente empleado: " + Empleado.devuelveProximoID());
 	}
 
