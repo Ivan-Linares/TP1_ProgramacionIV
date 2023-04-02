@@ -20,6 +20,7 @@ public class Principal {
 		}
 
 		System.out.println("ID del siguiente empleado: " + Empleado.devuelveProximoID());
+		//TEST
 	}
 
 }
